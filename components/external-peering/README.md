@@ -1,0 +1,1 @@
+To be run in a production or preproduction environemtn vpc to peer with the management vpc. Allows connections to and from shared infrastructure components

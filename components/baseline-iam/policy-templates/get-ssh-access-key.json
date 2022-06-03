@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListUsers",
+                "iam:GetGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetSSHPublicKey",
+                "iam:ListSSHPublicKeys"
+            ],
+            "Resource": [
+                "arn:aws:iam::${account_number}:user/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "ec2:DescribeTags",
+            "Resource": "*"
+        }
+    ]
+}
